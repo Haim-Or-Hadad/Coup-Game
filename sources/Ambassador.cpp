@@ -4,9 +4,9 @@
 
 using namespace std;
 
-namespace coup{
+namespace coup{ 
     Ambassador::Ambassador(Game & game,std::string  name) : Player(game, name)
-    {}
+    { }
     void Ambassador::transfer(Player & take , Player & give){
         if (!take.is_alive||!give.is_alive)
         {
